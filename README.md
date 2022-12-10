@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is a simple repository holding scrips that were used for a German 'Besondere Lernleistung' about the [IMoJIE-Model](https://arxiv.org/abs/2005.08178) alongside the self-written BeLL.
+This is a simple repository holding scrips that were used for a German 'Besondere Lernleistung' about the [IMoJIE-Model](https://arxiv.org/abs/2005.08178) alongside the self-written BeLL paper.
 
 If one searches to replicate the speed-up for IMoJIE from 247.4 to 85.8 seconds without a degradation in performance or any retraining, just copy code for the optimized gather_final_log_probs() function from this repo and may use it alongside the original [IMoJIE-Code](https://github.com/dair-iitd/imojie).
 
@@ -20,7 +20,7 @@ The second goal considered the replacing of the BERT encoder with more recent va
 
 ### Model performance wont deacrease by using the optimized function:
 ![optimized_extraction_speeds_for_github](https://user-images.githubusercontent.com/60894149/206860806-c9855525-3de7-4b8c-be3f-4b8b69fca294.png)
- Note that 'GRU' and 'LSTM' represent IMoJIE models with their respective decoder. <br>
- '*' means that no copy log probs of similar tokens are combined. <br>
- '†' means that tokens will only be copied from the source sentence. This eliminates combining tokens outside the source sentence.
+ Note that 'GRU' and 'LSTM' represent IMoJIE models with their respective decoder. Numbers represent the training batch size. <br>
+ '*' means that no copy log probabilities of similar tokens are combined anymore. <br>
+ '†' means that tokens will only be copied from the source sentence. This frames the combining of token copy log probs to the source sentence.
 
