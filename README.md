@@ -20,6 +20,7 @@ The second goal considered the replacing of the BERT encoder with more recent va
 
 ### Model performance wont deacrease by using the optimized function:
 ![optimized_extraction_speeds_for_github](https://user-images.githubusercontent.com/60894149/206860806-c9855525-3de7-4b8c-be3f-4b8b69fca294.png)
-
- 
+ Note that 'GRU' and 'LSTM' represent IMoJIE models with their respective decoder. <br>
+ '*' means that no copy log probs of similar tokens are combined. <br>
+ '†' means that tokens will only be copied from the source sentence. This eliminates combining tokens outside the source sentence.
 
