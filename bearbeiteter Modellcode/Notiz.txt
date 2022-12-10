@@ -1,6 +1,0 @@
-Quelle: https://github.com/dair-iitd/imojie
-
-Der Code wurde für die Implementation des GRU-Decoders nur leicht abgeändert, da für einen Austausch mit dem LSTM-Decoder nur der Cell-State ein Problem darstellt.
-Somit mussten nur etwa 30 Zeilen Code geändert werden.
-
-Ähnliches gilt für die Vereinfachung der Copy-Attention.
