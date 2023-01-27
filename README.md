@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is a simple repository holding scrips that were used for a German 'Besondere Lernleistung' about the [IMoJIE-Model](https://arxiv.org/abs/2005.08178) alongside the self-written BeLL paper.
+This is a simple repository holding scrips that were used for a German 'Belegarbeit' about the [IMoJIE-Model](https://arxiv.org/abs/2005.08178).
 
 If one searches to replicate the speed-up for IMoJIE from 247.4 to 85.8 seconds without a degradation in performance or any retraining, just copy code for the optimized gather_final_log_probs() function from this repo and may use it alongside the original [IMoJIE-Code](https://github.com/dair-iitd/imojie).
 
